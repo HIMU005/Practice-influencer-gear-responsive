@@ -5,7 +5,6 @@
 
 /* header styles */
 header {
-    border: 1px solid hotpink;
     /* padding: 100px 100px; */
     padding-right: 0px;
     background-color: white;
@@ -38,6 +37,7 @@ nav a {
     /* font-feature-settings: 'clig' off, 'liga' off; */
     font-family: Poppins;
     font-size: 1.5rem;
+    padding-left: 20px;
     font-weight: 700;
 }
 
@@ -45,6 +45,7 @@ nav a {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
+    padding-left: 20px;
 }
 
 .journey-title {
@@ -54,7 +55,6 @@ nav a {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 70px;
-    /* width: 50%; */
 }
 
 .journey-details {
@@ -123,7 +123,6 @@ nav a {
     grid-template-columns: repeat(3, 1fr);
     margin: 0px auto;
     padding: 0px auto;
-    border: 1px solid slateblue;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -137,42 +136,117 @@ nav a {
     margin: 0px auto;
     padding: 10px;
 }
-.card-title{
-    color: var(--Text-Gray-900, #18191F);
-font-feature-settings: 'liga' off;
-font-size: 1.75rem;
-font-weight: 600;
-line-height: 40px; /* 142.857% */
-}
-.card-price{
-    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
-font-family: Inter;
-font-size: 1.5rem;
-font-weight: 400;
-line-height: 150%; /* 36px */
+
+.card-title {
+    color: #18191F;
+    font-feature-settings: 'liga' off;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 40px;
+    /* 142.857% */
 }
 
-.card-rating{
-    color: var(--gray-80, #5E6366);
-font-family: Roboto;
-font-size: .9rem;
-font-weight: 700;
-line-height: 22px; /* 157.143% */
-letter-spacing: 0.1px;
+.card-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    /* 36px */
 }
 
-.card h6{
-    color: var(--Gray-50, #787885);
-font-family: Inter;
-font-size: .9rem;
-font-weight: 700;
-line-height: 143%; /* 20.02px */
-letter-spacing: 0.252px;
+.card-rating {
+    color: #5E6366;
+    font-family: Roboto;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.1px;
 }
 
+.card h6 {
+    color: #787885;
+    font-family: Inter;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 143%;
+    /* 20.02px */
+    letter-spacing: 0.252px;
+}
 
+.featured {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+}
 
+.featured-img img {
+    width: 100%;
+}
 
+.featured-title {
+    color: #0A0826;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.featured-description {
+    color: #6C6C6C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 28px;
+    /* 175% */
+}
+
+.featured-part {
+    width: 50%;
+}
+
+.featured-part button {
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    background: #E02C6D;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    background: #0A0826;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-item {
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 24px;
+}
 
 
 
@@ -188,7 +262,8 @@ letter-spacing: 0.252px;
         margin-bottom: 15px;
     }
 
-    .journey {
+    .journey,
+    .featured {
         flex-direction: column-reverse;
     }
 
@@ -203,7 +278,8 @@ letter-spacing: 0.252px;
         flex-direction: column;
     }
 
-    .journey {
+    .journey,
+    .featured {
         flex-direction: column-reverse;
     }
 
